@@ -31,19 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
 
-        RealmItem item1 = new RealmItem("Cheese", 5, 5.00);
-        item1.id = System.currentTimeMillis();
-        RealmItem item2 = new RealmItem("Milk", 10, 2.50);
-        item2.id = System.currentTimeMillis();
-        RealmItem item3 = new RealmItem("Candy", 1000, 3.50);
-        item3.id = System.currentTimeMillis();
-
-        realm.beginTransaction();
-        realm.copyToRealmOrUpdate(item1);
-        realm.copyToRealmOrUpdate(item2);
-        realm.copyToRealmOrUpdate(item3);
-        realm.commitTransaction();
-
         recycler = findViewById(R.id.recycler);
         final RecyclerViewAdapter adapter;
         adapter = new RecyclerViewAdapter(realm.where(RealmItem.class).findAll(), this);
@@ -63,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 realm.beginTransaction();
                 realm.where(RealmItem.class).equalTo("id", viewHolder.getItemId()).findAll().deleteAllFromRealm();
                 adapter.deleteItem();
+                realm.commitTransaction();
             }
         };
 

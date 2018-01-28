@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
@@ -33,7 +34,12 @@ public class RecyclerViewAdapter extends RealmRecyclerViewAdapter<RealmItem, Ite
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
         ItemView view = holder.getItemView();
-        context.startActivity(new Intent(context, CharityFinderActivity.class));
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, CharityFinderActivity.class));
+            }
+        });
         view.bind(getData().get(position));
     }
 
