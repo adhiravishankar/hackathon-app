@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
 
+        RealmItem item1 = new RealmItem("Sample Food", 5, 5.00);
+        item1.id = System.currentTimeMillis();
+
+
+        realm.beginTransaction();
+        realm.copyToRealmOrUpdate(item1);
+        realm.commitTransaction();
+
         recycler = findViewById(R.id.recycler);
         final RecyclerViewAdapter adapter;
         adapter = new RecyclerViewAdapter(realm.where(RealmItem.class).findAll(), this);
