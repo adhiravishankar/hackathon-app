@@ -1,0 +1,133 @@
+{
+  "project_info": {
+    "project_number": "528963535795",
+    "firebase_url": "https://bitspherical-chiroptera.firebaseio.com",
+    "project_id": "bitspherical-chiroptera",
+    "storage_bucket": "bitspherical-chiroptera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528963535795:android:2d21493f0e05dc20",
+        "android_client_info": {
+          "package_name": "com.bitspherical.lucifugus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528963535795-81emodhikmbocrhu74cicak31c0qm5cj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-hhq2s2cpl5mvtjcssn5beqqghc8t455b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitspherical.lucifugus",
+            "certificate_hash": "214a4e805791df92a8a006528cb31a1abc775620"
+          }
+        },
+        {
+          "client_id": "528963535795-c6tp6j333s3ehvhgemfngecdbt8f0iln.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-ql9qel52hjh8lu9b4hhvgrj0o35pplac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitspherical.lucifugus",
+            "certificate_hash": "35421a1689a4afff64fe100787779e8c67c8a2c1"
+          }
+        },
+        {
+          "client_id": "528963535795-vs0ehqq3bt5t1gp3p35p66t1domks4qq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-j1la0bnpm39qeolvh7t9t99eq3qj6dpc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-1nu2sas97fl5rfdpe739tnrlt4bbbm1n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitspherical.lucifugus",
+            "certificate_hash": "780decee4e2a26db8a1decc322c9fe9b568a07ea"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChvUm0vUb80WRxbIu_XWZjbJf2vYWxv5o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528963535795-7oa79c3p9hkuunt6lfn8g8f21hmvnd66.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bitspherical.Fuscus"
+              }
+            },
+            {
+              "client_id": "528963535795-81emodhikmbocrhu74cicak31c0qm5cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528963535795:android:19bdda708376dd7a",
+        "android_client_info": {
+          "package_name": "edu.gatech.hackathon.verve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528963535795-81emodhikmbocrhu74cicak31c0qm5cj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-c6tp6j333s3ehvhgemfngecdbt8f0iln.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-vs0ehqq3bt5t1gp3p35p66t1domks4qq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528963535795-j1la0bnpm39qeolvh7t9t99eq3qj6dpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChvUm0vUb80WRxbIu_XWZjbJf2vYWxv5o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

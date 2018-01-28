@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "edu.gatech.hackathon.verve"
+        minSdkVersion 26
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.github.zawadz88.materialpopupmenu:material-popup-menu:1.1.0'
+    implementation 'com.asksira.android:cameraviewplus:0.7.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support:exifinterface:27.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'at.favre.lib:armadillo:0.3.0'
+    implementation 'at.favre.lib:bytes:0.4.6'
+    implementation 'at.favre.lib:hkdf:1.0.0'
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'eu.giovannidefrancesco.sweetprefs:sweetprefs:1.0.1'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'io.realm:android-adapters:2.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}
+
+realm {
+    syncEnabled = true;
+}
+
+apply plugin: 'com.google.gms.google-services'
