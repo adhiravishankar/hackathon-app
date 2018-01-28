@@ -129,12 +129,18 @@ public class CameraActivity extends AppCompatActivity {
             @Override
             public void onResponse(@NonNull Call<List<Item>> call, @NonNull Response<List<Item>> response) {
                 Realm realm = Realm.getDefaultInstance();
+                System.out.println(response.body());
                 realm.beginTransaction();
                 for (Item item : response.body()) {
                     RealmItem realmItem = realm.createObject(RealmItem.class, System.currentTimeMillis());
                     realmItem.setName(item.product);
                     realmItem.setCost(item.cost);
                     realmItem.setDays(item.days);
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
                 realm.commitTransaction();
             }
